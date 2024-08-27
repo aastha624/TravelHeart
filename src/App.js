@@ -15,7 +15,7 @@ const App = () => {
     return(
       <div className="refresh">
         <h2>AMENDS 😔.... <br/>No More Tours Left</h2>
-        <button onClick={() => settours(data)} className="btn-white">Refresh</button>
+        <button className="btn-white" onClick={() => settours(data)} className="btn-white">Refresh</button>
       </div>
     )
   }

@@ -3,14 +3,14 @@ import Card from "./Card";
 
   function Tours({tours,removetour}){
 return(
-  <div>
+  <div className="container">
     <div>
-      <h2>TravelHeart</h2>
+      <h2 className="title">TravelHeart</h2>
     </div>
-    <div>
+    <div className="cards">
       {
         tours.map((tour)=>{
-          return <Card  {...tour} removetour={removetour}></Card>
+          return <Card key={tour.id} {...tour} removetour={removetour}></Card>
         })//seven city data map karavi lidho indivitual lakhavana badale map use kari lidhu 
       }
     </div>
