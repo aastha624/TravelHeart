@@ -10,6 +10,15 @@ const App = () => {
   const newtours=tours.filter(tour =>tour.id !==id);
   settours(newtours);
   }
+   // when all tours are clicked not interested then reinitializing all data to tours array
+   if(tours.length === 0){
+    return(
+      <div className="refresh">
+        <h2>AMENDS 😔.... <br/>No More Tours Left</h2>
+        <button onClick={() => settours(data)} className="btn-white">Refresh</button>
+      </div>
+    )
+  }
   return(
   <div>
   
